@@ -1,0 +1,7 @@
+Dúvidas Customer Arrival and Check-in
+
+- Criar Pool para Insurance Company na parte do mudanca de estado do seguro?
+- Separar tarefas de Check Required Documentation & Verify Insurance Fee and Vehicle Tax Payment ou pode ser só numa?
+- como dizer que foi o Customer a dar o input do data object Required Documentation
+- modelar na lane do customer a decisão de pagar ou não o seguro
+- Upper e Lowercase
