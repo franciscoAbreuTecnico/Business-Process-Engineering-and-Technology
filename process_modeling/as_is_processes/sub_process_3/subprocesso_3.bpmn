@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:modeler="http://camunda.org/schema/modeler/1.0" id="Definitions_0s4498l" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="5.29.0" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.6.0">
   <bpmn:collaboration id="Collaboration_12ec5fz">
-    <bpmn:participant id="Participant_1p78ii7" name="Vehicle Inspection Department" processRef="Process_0se5yvr" />
+    <bpmn:participant id="Participant_1p78ii7" name="Vehicle Inspection Division" processRef="Process_0se5yvr" />
   </bpmn:collaboration>
   <bpmn:process id="Process_0se5yvr" isExecutable="true">
     <bpmn:laneSet id="LaneSet_1tjbo4e">
@@ -80,12 +80,12 @@
         <dc:Bounds x="200" y="80" width="1130" height="572" />
         <bpmndi:BPMNLabel />
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Lane_0jw1vn3_di" bpmnElement="Lane_0jw1vn3" isHorizontal="true">
-        <dc:Bounds x="230" y="80" width="1100" height="380" />
-        <bpmndi:BPMNLabel />
-      </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Lane_1rslumh_di" bpmnElement="Lane_1rslumh" isHorizontal="true">
         <dc:Bounds x="230" y="460" width="1100" height="192" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_0jw1vn3_di" bpmnElement="Lane_0jw1vn3" isHorizontal="true">
+        <dc:Bounds x="230" y="80" width="1100" height="380" />
         <bpmndi:BPMNLabel />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="StartEvent_1_di" bpmnElement="StartEvent_1">
@@ -175,14 +175,14 @@
           <dc:Bounds x="880" y="146" width="80" height="27" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1ei4b2z_di" bpmnElement="Flow_1ei4b2z">
+        <di:waypoint x="955" y="270" />
+        <di:waypoint x="1165" y="270" />
+      </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_0jzvcup_di" bpmnElement="Flow_0jzvcup">
         <di:waypoint x="1100" y="180" />
         <di:waypoint x="1190" y="180" />
         <di:waypoint x="1190" y="245" />
-      </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="Flow_1ei4b2z_di" bpmnElement="Flow_1ei4b2z">
-        <di:waypoint x="955" y="270" />
-        <di:waypoint x="1165" y="270" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_058xdc3_di" bpmnElement="Flow_058xdc3">
         <di:waypoint x="1190" y="295" />
