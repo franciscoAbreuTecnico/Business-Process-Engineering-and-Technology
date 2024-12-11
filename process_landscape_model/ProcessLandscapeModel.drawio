@@ -1,0 +1,64 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" border="50" scale="3" compressed="false" locked="false" version="25.0.3">
+  <diagram name="Blank" id="YmL12bMKpDGza6XwsDPr">
+    <mxGraphModel dx="1253" dy="1693" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="1" shadow="0">
+      <root>
+        <mxCell id="X5NqExCQtvZxIxQ7pmgY-0" />
+        <mxCell id="1" parent="X5NqExCQtvZxIxQ7pmgY-0" />
+        <mxCell id="jCfEfen79MQRJi6moP4c-1" value="&lt;font&gt;Quality Control&lt;/font&gt;" style="shape=offPageConnector;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=14;fontStyle=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#FFFFFF;fontColor=#3B4B8C;" parent="1" vertex="1">
+          <mxGeometry x="117" y="86" width="150" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="jCfEfen79MQRJi6moP4c-2" value="Define Business&lt;div&gt;Strategy&lt;/div&gt;" style="shape=offPageConnector;whiteSpace=wrap;html=1;strokeWidth=2;fontStyle=1;fontSize=14;fillColor=#dae8fc;strokeColor=#FFFFFF;fontColor=#3B4B8C;" parent="1" vertex="1">
+          <mxGeometry x="307" y="86" width="150" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="jCfEfen79MQRJi6moP4c-3" value="Manage Enterprise" style="shape=offPageConnector;whiteSpace=wrap;html=1;strokeWidth=2;fontStyle=1;fontSize=14;fillColor=#dae8fc;strokeColor=#FFFFFF;fontColor=#3B4B8C;" parent="1" vertex="1">
+          <mxGeometry x="687" y="86" width="150" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="NjAqU9Y5rHBkyYTPuW-a-5" value="Inspection at&#xa;Base 4" style="shape=step;perimeter=stepPerimeter;strokeColor=#FFFFFF;fontFamily=Helvetica;fontSize=14;fillColor=#1ba1e2;fixedSize=1;size=17;fontStyle=1;strokeWidth=2;spacingTop=0;points=[];shadow=0;fontColor=#3B4B8C;opacity=50;" parent="1" vertex="1">
+          <mxGeometry x="667" y="271" width="190" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="NjAqU9Y5rHBkyYTPuW-a-3" value="Inspection Lane Entry,&#xa;Inspections and&#xa;Emissions at Base 2" style="shape=step;perimeter=stepPerimeter;strokeColor=#FFFFFF;fontFamily=Helvetica;fontSize=14;fillColor=#1ba1e2;fixedSize=1;size=17;fontStyle=1;strokeWidth=2;spacingTop=0;points=[];shadow=0;fontColor=#3B4B8C;opacity=50;" parent="1" vertex="1">
+          <mxGeometry x="287" y="271" width="190" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="NjAqU9Y5rHBkyYTPuW-a-2" value="Customer Arrival&#xa;and Check-in" style="shape=step;perimeter=stepPerimeter;strokeColor=#FFFFFF;fontFamily=Helvetica;fontSize=14;fillColor=#dae8fc;fixedSize=1;size=17;fontStyle=1;strokeWidth=2;spacingTop=0;points=[];fontColor=#3B4B8C;" parent="1" vertex="1">
+          <mxGeometry x="97" y="271" width="190" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="9xWqDNtLNqmxXEMWg_xV-1" value="Check-Out" style="shape=step;perimeter=stepPerimeter;strokeColor=#FFFFFF;fontFamily=Helvetica;fontSize=14;fillColor=#dae8fc;fixedSize=1;size=17;fontStyle=1;strokeWidth=2;spacingTop=0;points=[];fontColor=#3B4B8C;" vertex="1" parent="1">
+          <mxGeometry x="857" y="271" width="190" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="9xWqDNtLNqmxXEMWg_xV-2" value="Manage Risk" style="shape=offPageConnector;whiteSpace=wrap;html=1;strokeWidth=2;fontStyle=1;fontSize=14;fillColor=#dae8fc;strokeColor=#FFFFFF;fontColor=#3B4B8C;" vertex="1" parent="1">
+          <mxGeometry x="877" y="86" width="150" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="9xWqDNtLNqmxXEMWg_xV-4" value="Communication" style="shape=offPageConnector;whiteSpace=wrap;html=1;strokeWidth=2;fontStyle=1;fontSize=14;fillColor=#dae8fc;strokeColor=#FFFFFF;fontColor=#3B4B8C;" vertex="1" parent="1">
+          <mxGeometry x="497" y="86" width="150" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="9xWqDNtLNqmxXEMWg_xV-8" value="HR Management" style="shape=offPageConnector;whiteSpace=wrap;html=1;strokeWidth=2;flipV=1;fontSize=14;fontStyle=1;fillColor=#dae8fc;strokeColor=#FFFFFF;fontColor=#3B4B8C;" vertex="1" parent="1">
+          <mxGeometry x="687" y="460" width="150" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="9xWqDNtLNqmxXEMWg_xV-9" value="Customer Support" style="shape=offPageConnector;whiteSpace=wrap;html=1;strokeWidth=2;flipV=1;fontSize=14;fontStyle=1;fillColor=#dae8fc;strokeColor=#FFFFFF;fontColor=#3B4B8C;" vertex="1" parent="1">
+          <mxGeometry x="307" y="460" width="150" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="9xWqDNtLNqmxXEMWg_xV-10" value="IT&lt;div&gt;Management&lt;/div&gt;" style="shape=offPageConnector;whiteSpace=wrap;html=1;strokeWidth=2;flipV=1;fontSize=14;fontStyle=1;fillColor=#dae8fc;strokeColor=#FFFFFF;fontColor=#3B4B8C;" vertex="1" parent="1">
+          <mxGeometry x="117" y="460" width="150" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="9xWqDNtLNqmxXEMWg_xV-11" value="Financial&lt;div&gt;Department&lt;/div&gt;" style="shape=offPageConnector;whiteSpace=wrap;html=1;strokeWidth=2;flipV=1;fontSize=14;fontStyle=1;fillColor=#dae8fc;strokeColor=#FFFFFF;fontColor=#3B4B8C;" vertex="1" parent="1">
+          <mxGeometry x="497" y="460" width="150" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="9xWqDNtLNqmxXEMWg_xV-12" value="Indirect Procurement" style="shape=offPageConnector;whiteSpace=wrap;html=1;strokeWidth=2;flipV=1;fontSize=14;fontStyle=1;fillColor=#dae8fc;strokeColor=#FFFFFF;fontColor=#3B4B8C;" vertex="1" parent="1">
+          <mxGeometry x="877" y="460" width="150" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="9xWqDNtLNqmxXEMWg_xV-13" value="Inspection at&#xa;Base 3" style="shape=step;perimeter=stepPerimeter;strokeColor=#FFFFFF;fontFamily=Helvetica;fontSize=14;fillColor=#dae8fc;fixedSize=1;size=17;fontStyle=1;strokeWidth=2;spacingTop=0;points=[];fontColor=#3B4B8C;" vertex="1" parent="1">
+          <mxGeometry x="477" y="271" width="190" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="9xWqDNtLNqmxXEMWg_xV-14" value="&lt;font&gt;&lt;b&gt;Management Processes&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;fontColor=#3B4B8C;" vertex="1" parent="1">
+          <mxGeometry x="100" y="30" width="250" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9xWqDNtLNqmxXEMWg_xV-16" value="&lt;font&gt;&lt;b&gt;Core Processes&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;fontColor=#3B4B8C;" vertex="1" parent="1">
+          <mxGeometry x="97" y="220" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9xWqDNtLNqmxXEMWg_xV-17" value="&lt;font&gt;&lt;b&gt;Support Processes&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;fontColor=#3B4B8C;" vertex="1" parent="1">
+          <mxGeometry x="87" y="410" width="210" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
