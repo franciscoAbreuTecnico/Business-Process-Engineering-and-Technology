@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:modeler="http://camunda.org/schema/modeler/1.0" id="Definitions_0s4498l" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="5.29.0" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.6.0">
   <bpmn:collaboration id="Collaboration_12ec5fz">
-    <bpmn:participant id="Participant_1p78ii7" name="Vehicle Inspection Division" processRef="Process_0se5yvr" />
+    <bpmn:participant id="Participant_1p78ii7" name="Hestháls station" processRef="Process_0se5yvr" />
   </bpmn:collaboration>
   <bpmn:process id="Process_0se5yvr" isExecutable="true">
     <bpmn:laneSet id="LaneSet_1tjbo4e">
@@ -45,7 +45,7 @@
       <bpmn:incoming>Flow_1erlbk5</bpmn:incoming>
       <bpmn:outgoing>Flow_07i2wv5</bpmn:outgoing>
     </bpmn:task>
-    <bpmn:exclusiveGateway id="Gateway_09jzhx7">
+    <bpmn:exclusiveGateway id="Gateway_09jzhx7" name="delay in base 4?">
       <bpmn:incoming>Flow_07i2wv5</bpmn:incoming>
       <bpmn:outgoing>Flow_1crm3xx</bpmn:outgoing>
       <bpmn:outgoing>Flow_1ei4b2z</bpmn:outgoing>
@@ -69,8 +69,8 @@
     <bpmn:sequenceFlow id="Flow_11r8tjo" name="Traditional or Hybrid Vehicle" sourceRef="Gateway_18hc6tg" targetRef="Activity_0ylytf2" />
     <bpmn:sequenceFlow id="Flow_1erlbk5" sourceRef="Activity_19qfdo8" targetRef="Activity_0ylytf2" />
     <bpmn:sequenceFlow id="Flow_07i2wv5" sourceRef="Activity_0ylytf2" targetRef="Gateway_09jzhx7" />
-    <bpmn:sequenceFlow id="Flow_1crm3xx" name="Inspection delay in Base 4" sourceRef="Gateway_09jzhx7" targetRef="Activity_1x2ojyj" />
-    <bpmn:sequenceFlow id="Flow_1ei4b2z" sourceRef="Gateway_09jzhx7" targetRef="Gateway_12rd311" />
+    <bpmn:sequenceFlow id="Flow_1crm3xx" name="yes" sourceRef="Gateway_09jzhx7" targetRef="Activity_1x2ojyj" />
+    <bpmn:sequenceFlow id="Flow_1ei4b2z" name="no" sourceRef="Gateway_09jzhx7" targetRef="Gateway_12rd311" />
     <bpmn:sequenceFlow id="Flow_0jzvcup" sourceRef="Activity_1x2ojyj" targetRef="Gateway_12rd311" />
     <bpmn:sequenceFlow id="Flow_058xdc3" sourceRef="Gateway_12rd311" targetRef="Event_08a6638" />
   </bpmn:process>
@@ -115,6 +115,9 @@
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Gateway_09jzhx7_di" bpmnElement="Gateway_09jzhx7" isMarkerVisible="true">
         <dc:Bounds x="905" y="245" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="890" y="302" width="81" height="14" />
+        </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Activity_1x2ojyj_di" bpmnElement="Activity_1x2ojyj">
         <dc:Bounds x="1000" y="140" width="100" height="80" />
@@ -163,8 +166,8 @@
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_07i2wv5_di" bpmnElement="Flow_07i2wv5">
         <di:waypoint x="850" y="370" />
-        <di:waypoint x="880" y="370" />
-        <di:waypoint x="880" y="270" />
+        <di:waypoint x="870" y="370" />
+        <di:waypoint x="870" y="270" />
         <di:waypoint x="905" y="270" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_1crm3xx_di" bpmnElement="Flow_1crm3xx">
@@ -172,12 +175,15 @@
         <di:waypoint x="930" y="180" />
         <di:waypoint x="1000" y="180" />
         <bpmndi:BPMNLabel>
-          <dc:Bounds x="880" y="146" width="80" height="27" />
+          <dc:Bounds x="901" y="213" width="17" height="14" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_1ei4b2z_di" bpmnElement="Flow_1ei4b2z">
         <di:waypoint x="955" y="270" />
         <di:waypoint x="1165" y="270" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1054" y="252" width="13" height="14" />
+        </bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_0jzvcup_di" bpmnElement="Flow_0jzvcup">
         <di:waypoint x="1100" y="180" />
