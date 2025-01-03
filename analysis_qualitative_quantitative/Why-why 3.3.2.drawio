@@ -1,0 +1,79 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="25.0.3">
+  <diagram name="Page-1" id="hOW7pIRccUq6WkgOIuEP">
+    <mxGraphModel dx="1360" dy="2093" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="HBoZUfQbXor3aJ33_Fp8-1" value="Customer demand for additional tasks handled by receptionists &lt;i&gt;(accessing diverse services in one place)&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="200" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="HBoZUfQbXor3aJ33_Fp8-2" value="Receptionists handle multiple roles simultaneously" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="200" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="HBoZUfQbXor3aJ33_Fp8-3" value="Lack of automation for repetitive tasks &lt;i&gt;(manual handling of tasks increases workload)&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="HBoZUfQbXor3aJ33_Fp8-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="HBoZUfQbXor3aJ33_Fp8-4" target="HBoZUfQbXor3aJ33_Fp8-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HBoZUfQbXor3aJ33_Fp8-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="HBoZUfQbXor3aJ33_Fp8-4" target="HBoZUfQbXor3aJ33_Fp8-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HBoZUfQbXor3aJ33_Fp8-4" value="High customer volume during peak periods &lt;i&gt;(insufficient specialization for roles under pressure)&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="400" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="HBoZUfQbXor3aJ33_Fp8-5" value="Seasonal fluctuations in customer demand" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="350" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="HBoZUfQbXor3aJ33_Fp8-6" value="Inefficient allocation of human resources" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="480" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="HBoZUfQbXor3aJ33_Fp8-7" value="Resistance to adopting technological changes" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="-50" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="HBoZUfQbXor3aJ33_Fp8-8" value="Budget constraints" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="80" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="HBoZUfQbXor3aJ33_Fp8-10" value="Time efficiency for customers" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="215" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="HBoZUfQbXor3aJ33_Fp8-11" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="HBoZUfQbXor3aJ33_Fp8-2" target="HBoZUfQbXor3aJ33_Fp8-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="490" y="290" as="sourcePoint" />
+            <mxPoint x="540" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HBoZUfQbXor3aJ33_Fp8-13" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="HBoZUfQbXor3aJ33_Fp8-2" target="HBoZUfQbXor3aJ33_Fp8-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="290" y="250" as="sourcePoint" />
+            <mxPoint x="370" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HBoZUfQbXor3aJ33_Fp8-14" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="HBoZUfQbXor3aJ33_Fp8-2" target="HBoZUfQbXor3aJ33_Fp8-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="290" y="250" as="sourcePoint" />
+            <mxPoint x="370" y="50" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HBoZUfQbXor3aJ33_Fp8-15" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="520" y="239.5" as="sourcePoint" />
+            <mxPoint x="600" y="239.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HBoZUfQbXor3aJ33_Fp8-16" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="HBoZUfQbXor3aJ33_Fp8-3" target="HBoZUfQbXor3aJ33_Fp8-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="530" y="249.5" as="sourcePoint" />
+            <mxPoint x="610" y="249.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HBoZUfQbXor3aJ33_Fp8-17" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="HBoZUfQbXor3aJ33_Fp8-3" target="HBoZUfQbXor3aJ33_Fp8-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="530" y="50" as="sourcePoint" />
+            <mxPoint x="610" y="115" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
