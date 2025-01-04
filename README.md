@@ -5,7 +5,7 @@
 ### Chapter 3 - Qualitative and Quantitative Analysis
 [ ] - Introduction 
 #### Value Added Analysis
-[ ] - Introduction 
+[X] - Introduction 
 
 [ ] - Explain classification subprocess 2
 
@@ -39,17 +39,17 @@
 
 [ ] - Explain redesign
 #### 4.3 Results Comparison
-[ ] - Introduction
+[X] - Introduction
 
 [ ] - Present expected results for redesigned process 1
 
 [ ] - Present expected results for redesigned process 2
 
-[ ] - Present expected results for redesigned process 3
+[X] - Present expected results for redesigned process 3
 
 [ ] - Present expected results for redesigned process 4
 
-[ ] - Present expected results for redesigned process 5
+[X] - Present expected results for redesigned process 5
 
 [ ] - Present expected results for overall inspection process 
 
