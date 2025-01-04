@@ -14,14 +14,10 @@
         <bpmn:flowNodeRef>Activity_0bxi49z</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Activity_0vgh80o</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Gateway_18hc6tg</bpmn:flowNodeRef>
-        <bpmn:flowNodeRef>Gateway_09jzhx7</bpmn:flowNodeRef>
-        <bpmn:flowNodeRef>Activity_1x2ojyj</bpmn:flowNodeRef>
-        <bpmn:flowNodeRef>Event_08a6638</bpmn:flowNodeRef>
-        <bpmn:flowNodeRef>Gateway_12rd311</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Activity_10ap9qo</bpmn:flowNodeRef>
-        <bpmn:flowNodeRef>Activity_0ylytf2</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Gateway_12v4wc4</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Activity_19qfdo8</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Event_08a6638</bpmn:flowNodeRef>
       </bpmn:lane>
       <bpmn:lane id="Lane_1rslumh" name="Base 2 Inspector">
         <bpmn:flowNodeRef>StartEvent_1</bpmn:flowNodeRef>
@@ -81,45 +77,19 @@
       <bpmn:outgoing>Flow_0eb3j6w</bpmn:outgoing>
       <bpmn:outgoing>Flow_11r8tjo</bpmn:outgoing>
     </bpmn:exclusiveGateway>
-    <bpmn:exclusiveGateway id="Gateway_09jzhx7" name="delay in base 4?">
-      <bpmn:incoming>Flow_07i2wv5</bpmn:incoming>
-      <bpmn:outgoing>Flow_1crm3xx</bpmn:outgoing>
-      <bpmn:outgoing>Flow_1ei4b2z</bpmn:outgoing>
-    </bpmn:exclusiveGateway>
-    <bpmn:task id="Activity_1x2ojyj" name="Assist Base 4 inspector">
-      <bpmn:incoming>Flow_1crm3xx</bpmn:incoming>
-      <bpmn:outgoing>Flow_0jzvcup</bpmn:outgoing>
-    </bpmn:task>
-    <bpmn:endEvent id="Event_08a6638" name="Inspection at Base 3 complete">
-      <bpmn:incoming>Flow_058xdc3</bpmn:incoming>
-    </bpmn:endEvent>
-    <bpmn:exclusiveGateway id="Gateway_12rd311">
-      <bpmn:incoming>Flow_0jzvcup</bpmn:incoming>
-      <bpmn:incoming>Flow_1ei4b2z</bpmn:incoming>
-      <bpmn:outgoing>Flow_058xdc3</bpmn:outgoing>
-    </bpmn:exclusiveGateway>
     <bpmn:sequenceFlow id="Flow_0eb3j6w" name="Electrical Vehicle" sourceRef="Gateway_18hc6tg" targetRef="Activity_19qfdo8" />
-    <bpmn:sequenceFlow id="Flow_07i2wv5" sourceRef="Activity_0ylytf2" targetRef="Gateway_09jzhx7" />
-    <bpmn:sequenceFlow id="Flow_1crm3xx" name="yes" sourceRef="Gateway_09jzhx7" targetRef="Activity_1x2ojyj" />
-    <bpmn:sequenceFlow id="Flow_1ei4b2z" name="no" sourceRef="Gateway_09jzhx7" targetRef="Gateway_12rd311" />
-    <bpmn:sequenceFlow id="Flow_0jzvcup" sourceRef="Activity_1x2ojyj" targetRef="Gateway_12rd311" />
-    <bpmn:sequenceFlow id="Flow_058xdc3" sourceRef="Gateway_12rd311" targetRef="Event_08a6638" />
     <bpmn:task id="Activity_10ap9qo" name="Check front and rear brakes">
       <bpmn:incoming>Flow_07ownw8</bpmn:incoming>
       <bpmn:outgoing>Flow_1364abf</bpmn:outgoing>
     </bpmn:task>
     <bpmn:sequenceFlow id="Flow_07ownw8" sourceRef="Gateway_0ka89qc" targetRef="Activity_10ap9qo" />
-    <bpmn:task id="Activity_0ylytf2" name="Check for delays in Base 4">
-      <bpmn:incoming>Flow_1affr2t</bpmn:incoming>
-      <bpmn:outgoing>Flow_07i2wv5</bpmn:outgoing>
-    </bpmn:task>
     <bpmn:sequenceFlow id="Flow_11r8tjo" name="Traditional or Hybrid Vehicle" sourceRef="Gateway_18hc6tg" targetRef="Gateway_12v4wc4" />
     <bpmn:exclusiveGateway id="Gateway_12v4wc4">
       <bpmn:incoming>Flow_11r8tjo</bpmn:incoming>
       <bpmn:incoming>Flow_128y3wh</bpmn:incoming>
       <bpmn:outgoing>Flow_1affr2t</bpmn:outgoing>
     </bpmn:exclusiveGateway>
-    <bpmn:sequenceFlow id="Flow_1affr2t" sourceRef="Gateway_12v4wc4" targetRef="Activity_0ylytf2" />
+    <bpmn:sequenceFlow id="Flow_1affr2t" sourceRef="Gateway_12v4wc4" targetRef="Event_08a6638" />
     <bpmn:sequenceFlow id="Flow_128y3wh" sourceRef="Activity_19qfdo8" targetRef="Gateway_12v4wc4" />
     <bpmn:task id="Activity_19qfdo8" name="Check regenerative braking systems">
       <bpmn:incoming>Flow_0eb3j6w</bpmn:incoming>
@@ -130,6 +100,9 @@
     <bpmn:sequenceFlow id="Flow_0oh7j9c" sourceRef="Activity_1k2fav6" targetRef="Activity_155d5ef" />
     <bpmn:sequenceFlow id="Flow_1jbd17g" sourceRef="Activity_155d5ef" targetRef="Activity_1alkvu9" />
     <bpmn:sequenceFlow id="Flow_1rnqgup" sourceRef="Activity_1alkvu9" targetRef="Gateway_0jrn0b8" />
+    <bpmn:endEvent id="Event_08a6638" name="Inspection at Base 3 complete">
+      <bpmn:incoming>Flow_1affr2t</bpmn:incoming>
+    </bpmn:endEvent>
   </bpmn:process>
   <bpmndi:BPMNDiagram id="BPMNDiagram_1">
     <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration_12ec5fz">
@@ -184,31 +157,8 @@
       <bpmndi:BPMNShape id="Gateway_18hc6tg_di" bpmnElement="Gateway_18hc6tg" isMarkerVisible="true">
         <dc:Bounds x="1405" y="245" width="50" height="50" />
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Gateway_09jzhx7_di" bpmnElement="Gateway_09jzhx7" isMarkerVisible="true">
-        <dc:Bounds x="1685" y="245" width="50" height="50" />
-        <bpmndi:BPMNLabel>
-          <dc:Bounds x="1593.5" y="263" width="81" height="14" />
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Activity_1x2ojyj_di" bpmnElement="Activity_1x2ojyj">
-        <dc:Bounds x="1790" y="140" width="100" height="80" />
-        <bpmndi:BPMNLabel />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Event_08a6638_di" bpmnElement="Event_08a6638">
-        <dc:Bounds x="1932" y="352" width="36" height="36" />
-        <bpmndi:BPMNLabel>
-          <dc:Bounds x="1909" y="395" width="83" height="27" />
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Gateway_12rd311_di" bpmnElement="Gateway_12rd311" isMarkerVisible="true">
-        <dc:Bounds x="1925" y="245" width="50" height="50" />
-      </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Activity_10ap9qo_di" bpmnElement="Activity_10ap9qo">
         <dc:Bounds x="1230" y="230" width="100" height="80" />
-        <bpmndi:BPMNLabel />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Activity_0ylytf2_di" bpmnElement="Activity_0ylytf2">
-        <dc:Bounds x="1660" y="330" width="100" height="80" />
         <bpmndi:BPMNLabel />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Gateway_12v4wc4_di" bpmnElement="Gateway_12v4wc4" isMarkerVisible="true">
@@ -222,6 +172,12 @@
         <dc:Bounds x="1255" y="375" width="50" height="50" />
         <bpmndi:BPMNLabel>
           <dc:Bounds x="1256" y="351" width="48" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_08a6638_di" bpmnElement="Event_08a6638">
+        <dc:Bounds x="1652" y="352" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1629" y="395" width="83" height="27" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="Flow_0g0t40r_di" bpmnElement="Flow_0g0t40r">
@@ -270,41 +226,13 @@
           <dc:Bounds x="1344" y="346" width="71" height="27" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="Flow_07i2wv5_di" bpmnElement="Flow_07i2wv5">
-        <di:waypoint x="1710" y="330" />
-        <di:waypoint x="1710" y="295" />
-      </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="Flow_1crm3xx_di" bpmnElement="Flow_1crm3xx">
-        <di:waypoint x="1710" y="245" />
-        <di:waypoint x="1710" y="180" />
-        <di:waypoint x="1790" y="180" />
-        <bpmndi:BPMNLabel>
-          <dc:Bounds x="1681" y="213" width="17" height="14" />
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="Flow_1ei4b2z_di" bpmnElement="Flow_1ei4b2z">
-        <di:waypoint x="1735" y="270" />
-        <di:waypoint x="1925" y="270" />
-        <bpmndi:BPMNLabel>
-          <dc:Bounds x="1824" y="252" width="13" height="14" />
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="Flow_0jzvcup_di" bpmnElement="Flow_0jzvcup">
-        <di:waypoint x="1890" y="180" />
-        <di:waypoint x="1950" y="180" />
-        <di:waypoint x="1950" y="245" />
-      </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="Flow_058xdc3_di" bpmnElement="Flow_058xdc3">
-        <di:waypoint x="1950" y="295" />
-        <di:waypoint x="1950" y="352" />
-      </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_07ownw8_di" bpmnElement="Flow_07ownw8">
         <di:waypoint x="1145" y="270" />
         <di:waypoint x="1230" y="270" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_1affr2t_di" bpmnElement="Flow_1affr2t">
         <di:waypoint x="1565" y="370" />
-        <di:waypoint x="1660" y="370" />
+        <di:waypoint x="1652" y="370" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_128y3wh_di" bpmnElement="Flow_128y3wh">
         <di:waypoint x="1540" y="220" />
