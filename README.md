@@ -39,6 +39,8 @@
 
 [ ] - Explain redesign
 #### 4.3 Results Comparison
+[ ] - Introduction
+
 [ ] - Present expected results for redesigned process 1
 
 [ ] - Present expected results for redesigned process 2
