@@ -107,15 +107,15 @@
   <bpmndi:BPMNDiagram id="BPMNDiagram_1">
     <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration_12ec5fz">
       <bpmndi:BPMNShape id="Participant_1p78ii7_di" bpmnElement="Participant_1p78ii7" isHorizontal="true">
-        <dc:Bounds x="200" y="80" width="1875" height="572" />
+        <dc:Bounds x="200" y="80" width="1550" height="572" />
         <bpmndi:BPMNLabel />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Lane_1rslumh_di" bpmnElement="Lane_1rslumh" isHorizontal="true">
-        <dc:Bounds x="230" y="460" width="1845" height="192" />
+        <dc:Bounds x="230" y="460" width="1520" height="192" />
         <bpmndi:BPMNLabel />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Lane_0jw1vn3_di" bpmnElement="Lane_0jw1vn3" isHorizontal="true">
-        <dc:Bounds x="230" y="80" width="1845" height="380" />
+        <dc:Bounds x="230" y="80" width="1520" height="380" />
         <bpmndi:BPMNLabel />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="StartEvent_1_di" bpmnElement="StartEvent_1">

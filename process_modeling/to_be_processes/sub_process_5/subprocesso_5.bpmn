@@ -26,7 +26,6 @@
         <bpmn:flowNodeRef>Event_0q5q96l</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Activity_0p4ytjp</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Gateway_06tb7zx</bpmn:flowNodeRef>
-        <bpmn:flowNodeRef>Activity_06e1tpr</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Activity_0d5rg6c</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Gateway_0kc77wv</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Event_0s75oeq</bpmn:flowNodeRef>
@@ -107,15 +106,11 @@
       <bpmn:outgoing>Flow_0fq42dm</bpmn:outgoing>
       <bpmn:outgoing>Flow_0ypoi2a</bpmn:outgoing>
     </bpmn:exclusiveGateway>
-    <bpmn:exclusiveGateway id="Gateway_06tb7zx" name="issues found?">
-      <bpmn:incoming>Flow_1so89az</bpmn:incoming>
+    <bpmn:exclusiveGateway id="Gateway_06tb7zx" name="flagged issues?">
+      <bpmn:incoming>Flow_0ypoi2a</bpmn:incoming>
       <bpmn:outgoing>Flow_0zlei71</bpmn:outgoing>
       <bpmn:outgoing>Flow_1c9jfmy</bpmn:outgoing>
     </bpmn:exclusiveGateway>
-    <bpmn:task id="Activity_06e1tpr" name="Assess for document issues">
-      <bpmn:incoming>Flow_0ypoi2a</bpmn:incoming>
-      <bpmn:outgoing>Flow_1so89az</bpmn:outgoing>
-    </bpmn:task>
     <bpmn:task id="Activity_0d5rg6c" name="Communicate issues to Owner">
       <bpmn:incoming>Flow_1c9jfmy</bpmn:incoming>
       <bpmn:outgoing>Flow_0h0pitt</bpmn:outgoing>
@@ -153,8 +148,7 @@
     <bpmn:sequenceFlow id="Flow_1e2zsge" sourceRef="Activity_0p4ytjp" targetRef="Activity_1mvq9if" />
     <bpmn:sequenceFlow id="Flow_0sadr7e" sourceRef="Activity_0jn9frp" targetRef="Gateway_19ab658" />
     <bpmn:sequenceFlow id="Flow_0fq42dm" name="yes" sourceRef="Gateway_19ab658" targetRef="Gateway_1eoy3ic" />
-    <bpmn:sequenceFlow id="Flow_0ypoi2a" name="no" sourceRef="Gateway_19ab658" targetRef="Activity_06e1tpr" />
-    <bpmn:sequenceFlow id="Flow_1so89az" sourceRef="Activity_06e1tpr" targetRef="Gateway_06tb7zx" />
+    <bpmn:sequenceFlow id="Flow_0ypoi2a" name="no" sourceRef="Gateway_19ab658" targetRef="Gateway_06tb7zx" />
     <bpmn:sequenceFlow id="Flow_0zlei71" name="no" sourceRef="Gateway_06tb7zx" targetRef="Gateway_0kc77wv" />
     <bpmn:sequenceFlow id="Flow_1c9jfmy" name="yes" sourceRef="Gateway_06tb7zx" targetRef="Activity_0d5rg6c" />
     <bpmn:sequenceFlow id="Flow_0h0pitt" sourceRef="Activity_0d5rg6c" targetRef="Gateway_0kc77wv" />
@@ -245,12 +239,8 @@
       <bpmndi:BPMNShape id="Gateway_06tb7zx_di" bpmnElement="Gateway_06tb7zx" isMarkerVisible="true">
         <dc:Bounds x="1665" y="705" width="50" height="50" />
         <bpmndi:BPMNLabel>
-          <dc:Bounds x="1655" y="681" width="69" height="14" />
+          <dc:Bounds x="1652" y="681" width="76" height="14" />
         </bpmndi:BPMNLabel>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Activity_06e1tpr_di" bpmnElement="Activity_06e1tpr">
-        <dc:Bounds x="1510" y="690" width="100" height="80" />
-        <bpmndi:BPMNLabel />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Activity_0d5rg6c_di" bpmnElement="Activity_0d5rg6c">
         <dc:Bounds x="1790" y="690" width="100" height="80" />
@@ -345,14 +335,11 @@
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_0ypoi2a_di" bpmnElement="Flow_0ypoi2a">
         <di:waypoint x="1560" y="605" />
-        <di:waypoint x="1560" y="690" />
+        <di:waypoint x="1560" y="730" />
+        <di:waypoint x="1665" y="730" />
         <bpmndi:BPMNLabel>
           <dc:Bounds x="1569" y="645" width="13" height="14" />
         </bpmndi:BPMNLabel>
-      </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="Flow_1so89az_di" bpmnElement="Flow_1so89az">
-        <di:waypoint x="1610" y="730" />
-        <di:waypoint x="1665" y="730" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_0zlei71_di" bpmnElement="Flow_0zlei71">
         <di:waypoint x="1690" y="755" />
