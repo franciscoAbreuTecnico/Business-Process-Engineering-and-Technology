@@ -58,14 +58,14 @@
 ### Appendices
 #### A - ”As Is” Simulations
 ##### Subprocess 2 - Inspection Lane Entry, Inspection and Emissions Testing at Base 2
-[ ] - Add simulation results
+[X] - Add simulation results
 ##### Subprocess 4 - Inspection at Base 4
-[ ] - Add simulation results
+[X] - Add simulation results
 
 #### B - ”To Be” Simulations
 ##### High-Level Process
 [ ] - Add simulation results
 ##### Subprocess 2 - Inspection Lane Entry, Inspection and Emissions Testing at Base 2
-[ ] - Add simulation results
+[X] - Add simulation results
 ##### Subprocess 4 - Inspection at Base 4
-[ ] - Add simulation results
+[X] - Add simulation results
