@@ -31,13 +31,13 @@
 
 [ ] - Explain redesign
 ##### 4.2.2 Subprocess 2 - Inspection Lane Entry, Inspection and Emissions Testing at Base 2
-[ ] - Add updated BPMN
+[X] - Add updated BPMN
 
-[ ] - Explain redesign
+[X] - Explain redesign
 ##### 4.2.4 Subprocess 4 - Inspection at Base 4
-[ ] - Add updated BPMN
+[X] - Add updated BPMN
 
-[ ] - Explain redesign
+[X] - Explain redesign
 #### 4.3 Results Comparison
 [X] - Introduction
 
