@@ -43,11 +43,11 @@
 
 [ ] - Present expected results for redesigned process 1
 
-[ ] - Present expected results for redesigned process 2
+[X] - Present expected results for redesigned process 2
 
 [X] - Present expected results for redesigned process 3
 
-[ ] - Present expected results for redesigned process 4
+[X] - Present expected results for redesigned process 4
 
 [X] - Present expected results for redesigned process 5
 
