@@ -24,7 +24,7 @@
 ##### Issue 4.1.1
 [ ] - Explain solution 
 ##### Issue 4.1.6
-[ ] - Explain solution 
+[X] - Explain solution 
 #### 4.2 Process Redesign
 ##### 4.2.1 Subprocess 1 - Customer Arrival and Check-in
 [ ] - Add BPMN 
