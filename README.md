@@ -7,9 +7,9 @@
 #### Value Added Analysis
 [X] - Introduction 
 
-[ ] - Explain classification subprocess 2
+[X] - Explain classification subprocess 2
 
-[ ] - Explain classification subprocess 4
+[X] - Explain classification subprocess 4
 #### Issue Register
 [ ] - Introduction
 ##### Issue 3.3.1
